@@ -1,0 +1,34 @@
+.undo-redo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* Button click effect */
+.btn:active {
+  transform: scale(0.95);
+  background-color: #388e3c;
+}
+
+/* Disabled button style */
+.btn:disabled {
+  background-color: #9e9e9e;
+  cursor: not-allowed;
+}
+
+/* Hover effect for active buttons */
+.btn:hover:not(:disabled) {
+  background-color: #2e7d32;
+}
